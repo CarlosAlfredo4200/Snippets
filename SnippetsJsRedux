@@ -1,0 +1,27 @@
+{
+	 
+	 "Crear slice de Redux": {
+		"prefix": "reduxslice",
+		"body": [
+			"import { createSlice } from '@reduxjs/toolkit';",
+			"",
+			"export const ${1:template}Slice = createSlice({",
+			"    name: 'name',",
+			"    initialState: {",
+			"        counter: 10",
+			"    },",
+			"    reducers: {",
+			"        increment: (state, /* action */ ) => {",
+		 
+			"            state.counter += 1;",
+			"        },",
+			"    }",
+			"});",
+			"",
+			"",
+			"export const { increment } = ${1:template}Slice.actions;",
+		],
+		"description": "Log output to console"
+	}
+
+}
